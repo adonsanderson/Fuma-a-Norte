@@ -1,0 +1,6 @@
+{
+  "name": "Fumaça Norte",
+  "description": "Aplicativo Android Offline-First de monitoramento meteorológico de Manaus (Open-Meteo) com Clean Architecture e Jetpack Compose.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
