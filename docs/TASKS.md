@@ -50,11 +50,11 @@ Este documento descreve o roadmap sequencial do projeto **Fumaça Norte**, estru
 ---
 
 ## Marco 5 — Polimento Visual, Acessibilidade, Assets e Testes de Integração Local
-- [ ] Criar ícone adaptativo customizado do aplicativo e recursos visuais de polimento.
-- [ ] Revisar adaptatividade para telas compactas, médias e expandidas (Window Size Classes / `widthIn`).
-- [ ] Verificar conformidade de acessibilidade (`contentDescription`, contraste, alvos de toque >= `48.dp`) e ausência de recomposições desnecessárias.
-- [ ] Revisar tratamento de erros transitórios, estado `Empty` e comportamento offline em múltiplas rotações/ciclos de vida.
-- [ ] Adicionar testes complementares (incluindo Robolectric para fluxos críticos de UI/persistência, se aplicável) e garantir execução integral da suíte de testes.
+- [x] Criar ícone adaptativo customizado do aplicativo e recursos visuais de polimento.
+- [x] Revisar adaptatividade para telas compactas, médias e expandidas (Window Size Classes / `widthIn`).
+- [x] Verificar conformidade de acessibilidade (`contentDescription`, contraste, alvos de toque >= `48.dp`) e ausência de recomposições desnecessárias.
+- [x] Revisar tratamento de erros transitórios, estado `Empty` e comportamento offline em múltiplas rotações/ciclos de vida.
+- [x] Adicionar testes complementares (incluindo Robolectric para fluxos críticos de UI/persistência, se aplicável) e garantir execução integral da suíte de testes.
 
 ---
 

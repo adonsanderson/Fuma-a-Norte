@@ -1,5 +1,6 @@
 package com.example.fumacanorte.presentation.weather.components
 
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
@@ -28,11 +29,15 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.alpha
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.vector.ImageVector
+import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.platform.testTag
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import com.example.R
@@ -56,8 +61,8 @@ fun CurrentWeatherHeroCard(
 
     val heroBrush = Brush.linearGradient(
         colors = listOf(
-            MaterialTheme.colorScheme.primaryContainer,
-            MaterialTheme.colorScheme.secondaryContainer
+            MaterialTheme.colorScheme.primaryContainer.copy(alpha = 0.88f),
+            MaterialTheme.colorScheme.secondaryContainer.copy(alpha = 0.78f)
         )
     )
 
@@ -69,20 +74,34 @@ fun CurrentWeatherHeroCard(
         colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.primaryContainer),
         elevation = CardDefaults.cardElevation(defaultElevation = 2.dp)
     ) {
-        Box(
-            modifier = Modifier
-                .fillMaxWidth()
-                .background(heroBrush)
-                .padding(24.dp)
-        ) {
-            Column(modifier = Modifier.fillMaxWidth()) {
+        Box(modifier = Modifier.fillMaxWidth()) {
+            Image(
+                painter = painterResource(id = R.drawable.img_manaus_sky_banner),
+                contentDescription = null,
+                contentScale = ContentScale.Crop,
+                modifier = Modifier
+                    .matchParentSize()
+                    .alpha(0.32f)
+            )
+
+            Box(
+                modifier = Modifier
+                    .matchParentSize()
+                    .background(heroBrush)
+            )
+
+            Column(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(24.dp)
+            ) {
                 Row(
                     modifier = Modifier.fillMaxWidth(),
                     horizontalArrangement = Arrangement.SpaceBetween,
                     verticalAlignment = Alignment.CenterVertically
                 ) {
                     Surface(
-                        color = MaterialTheme.colorScheme.surface.copy(alpha = 0.65f),
+                        color = MaterialTheme.colorScheme.surface.copy(alpha = 0.72f),
                         shape = RoundedCornerShape(50)
                     ) {
                         Row(
@@ -107,7 +126,7 @@ fun CurrentWeatherHeroCard(
                     Text(
                         text = stringResource(R.string.location_coordinates_manaus),
                         style = MaterialTheme.typography.labelSmall,
-                        color = MaterialTheme.colorScheme.onPrimaryContainer.copy(alpha = 0.8f)
+                        color = MaterialTheme.colorScheme.onPrimaryContainer.copy(alpha = 0.85f)
                     )
                 }
 
@@ -138,7 +157,7 @@ fun CurrentWeatherHeroCard(
                         modifier = Modifier
                             .size(76.dp)
                             .clip(CircleShape)
-                            .background(MaterialTheme.colorScheme.surface.copy(alpha = 0.45f)),
+                            .background(MaterialTheme.colorScheme.surface.copy(alpha = 0.55f)),
                         contentAlignment = Alignment.Center
                     ) {
                         Icon(
@@ -194,13 +213,13 @@ fun CurrentWeatherHeroCard(
                     Icon(
                         imageVector = Icons.Rounded.WbTwilight,
                         contentDescription = null,
-                        tint = MaterialTheme.colorScheme.onPrimaryContainer.copy(alpha = 0.75f),
+                        tint = MaterialTheme.colorScheme.onPrimaryContainer.copy(alpha = 0.8f),
                         modifier = Modifier.size(14.dp)
                     )
                     Text(
                         text = stringResource(R.string.sync_last_updated, updatedText),
                         style = MaterialTheme.typography.labelMedium,
-                        color = MaterialTheme.colorScheme.onPrimaryContainer.copy(alpha = 0.85f)
+                        color = MaterialTheme.colorScheme.onPrimaryContainer.copy(alpha = 0.9f)
                     )
                 }
             }
@@ -216,8 +235,8 @@ private fun HeroMetricPill(
     modifier: Modifier = Modifier
 ) {
     Surface(
-        modifier = modifier,
-        color = MaterialTheme.colorScheme.surface.copy(alpha = 0.6f),
+        modifier = modifier.semantics(mergeDescendants = true) {},
+        color = MaterialTheme.colorScheme.surface.copy(alpha = 0.68f),
         shape = RoundedCornerShape(16.dp)
     ) {
         Column(
