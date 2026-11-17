@@ -59,8 +59,8 @@ Este documento descreve o roadmap sequencial do projeto **Fumaça Norte**, estru
 ---
 
 ## Marco 6 — Validação Final, Auditoria SDD e Documentação Definitiva
-- [ ] Auditar conformidade rigorosa com a Regra de Dependência (garantir zero imports de Android/Room/Retrofit no pacote `domain`).
-- [ ] Verificar aderência a todos os requisitos RF01–RF06 e RNF01–RNF05 descritos em `docs/SPECIFICATION.md`.
-- [ ] Executar `gradle :app:testDebugUnitTest` e compilação completa do APK de debug sem erros ou warnings críticos.
-- [ ] Atualizar `docs/TASKS.md` marcando todas as entregas concluídas.
-- [ ] Atualizar `README.md` com instruções finais, resultados dos testes, seção de evidências e limitações conhecidas.
+- [x] Auditar conformidade rigorosa com a Regra de Dependência (garantir zero imports de Android/Room/Retrofit no pacote `domain`).
+- [x] Verificar aderência a todos os requisitos RF01–RF06 e RNF01–RNF05 descritos em `docs/SPECIFICATION.md`.
+- [x] Executar `gradle :app:testDebugUnitTest` e compilação completa do APK de debug sem erros ou warnings críticos.
+- [x] Atualizar `docs/TASKS.md` marcando todas as entregas concluídas.
+- [x] Atualizar `README.md` com instruções finais, resultados dos testes, seção de evidências e limitações conhecidas.
