@@ -1,3 +1,72 @@
 <resources>
     <string name="app_name">Fumaça Norte</string>
+    <string name="location_manaus">Manaus, AM</string>
+    <string name="location_coordinates_manaus">Lat -3,10 · Lon -60,02</string>
+
+    <!-- Ações e Navegação -->
+    <string name="action_refresh">Atualizar previsão</string>
+    <string name="action_retry">Tentar novamente</string>
+    <string name="action_dismiss">Dispensar</string>
+    <string name="action_back">Voltar</string>
+
+    <!-- Estados de UI -->
+    <string name="state_loading_title">Carregando dados climáticos</string>
+    <string name="state_loading_subtitle">Consultando condições de Manaus…</string>
+    <string name="state_empty_title">Nenhuma previsão armazenada</string>
+    <string name="state_empty_subtitle">Conecte-se à internet e atualize para baixar o monitoramento climático de Manaus.</string>
+    <string name="state_error_title">Não foi possível atualizar</string>
+    <string name="error_no_internet">Sem conexão com a internet. Verifique sua rede e tente novamente.</string>
+    <string name="error_timeout">O servidor demorou para responder. Tente novamente em instantes.</string>
+    <string name="error_server">Serviço meteorológico indisponível no momento (código %1$d).</string>
+    <string name="error_parsing">Os dados meteorológicos recebidos estão em formato inesperado.</string>
+    <string name="error_unknown">Ocorreu um erro inesperado ao consultar a previsão.</string>
+
+    <!-- Banner Offline / Sincronização -->
+    <string name="sync_offline_banner">Modo offline — exibindo último cache salvo.</string>
+    <string name="sync_last_updated">Atualizado em %1$s</string>
+    <string name="sync_refreshing">Sincronizando com Open-Meteo…</string>
+
+    <!-- Dashboard -->
+    <string name="section_current_conditions">Condições Atuais</string>
+    <string name="section_hourly_forecast">Previsão Horária</string>
+    <string name="metric_apparent_temp">Sensação</string>
+    <string name="metric_humidity">Umidade</string>
+    <string name="metric_wind">Vento</string>
+    <string name="metric_precipitation">Chuva</string>
+    <string name="metric_rain_probability">Prob. chuva</string>
+    <string name="metric_wmo_code">Código WMO</string>
+    <string name="format_temperature">%1$d°</string>
+    <string name="format_temperature_decimal">%1$.1f°C</string>
+    <string name="format_percent">%1$d%%</string>
+    <string name="format_wind_kmh">%1$.1f km/h</string>
+    <string name="format_precipitation_mm">%1$.1f mm</string>
+    <string name="format_wmo_code">#%1$d</string>
+
+    <!-- Detalhes Horários -->
+    <string name="hourly_detail_title">Detalhes do Horário</string>
+    <string name="hourly_detail_not_found_title">Horário não encontrado</string>
+    <string name="hourly_detail_not_found_subtitle">Este registro não está mais disponível no cache local.</string>
+    <string name="hourly_item_content_description">Previsão para %1$s: %2$s, temperatura %3$d graus, probabilidade de chuva %4$d por cento</string>
+
+    <!-- Condições Climáticas WMO -->
+    <string name="wmo_clear_sky">Céu limpo</string>
+    <string name="wmo_mainly_clear">Predomínio de sol</string>
+    <string name="wmo_partly_cloudy">Parcialmente nublado</string>
+    <string name="wmo_overcast">Nublado</string>
+    <string name="wmo_fog">Neblina / Fumaça</string>
+    <string name="wmo_drizzle_light">Garoa leve</string>
+    <string name="wmo_drizzle_moderate">Garoa moderada</string>
+    <string name="wmo_drizzle_dense">Garoa intensa</string>
+    <string name="wmo_freezing_drizzle">Garoa congelante</string>
+    <string name="wmo_rain_slight">Chuva fraca</string>
+    <string name="wmo_rain_moderate">Chuva moderada</string>
+    <string name="wmo_rain_heavy">Chuva forte</string>
+    <string name="wmo_freezing_rain">Chuva congelante</string>
+    <string name="wmo_snow_fall">Precipitação de neve</string>
+    <string name="wmo_rain_showers_slight">Pancadas leves</string>
+    <string name="wmo_rain_showers_moderate">Pancadas moderadas</string>
+    <string name="wmo_rain_showers_violent">Pancadas intensas</string>
+    <string name="wmo_thunderstorm">Trovoada</string>
+    <string name="wmo_thunderstorm_hail">Tempestade com granizo</string>
+    <string name="wmo_unknown">Condição indefinida</string>
 </resources>

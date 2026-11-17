@@ -3,7 +3,9 @@ package com.example.fumacanorte
 import android.app.Application
 import com.example.fumacanorte.di.dataModule
 import com.example.fumacanorte.di.databaseModule
+import com.example.fumacanorte.di.domainModule
 import com.example.fumacanorte.di.networkModule
+import com.example.fumacanorte.di.presentationModule
 import org.koin.android.ext.koin.androidContext
 import org.koin.android.ext.koin.androidLogger
 import org.koin.core.context.startKoin
@@ -18,7 +20,9 @@ class FumacaNorteApplication : Application() {
             modules(
                 networkModule,
                 databaseModule,
-                dataModule
+                dataModule,
+                domainModule,
+                presentationModule
             )
         }
     }

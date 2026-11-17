@@ -37,15 +37,15 @@ Este documento descreve o roadmap sequencial do projeto **Fumaça Norte**, estru
 ---
 
 ## Marco 4 — Camada Presentation (ViewModels, UDF e UI Jetpack Compose)
-- [ ] Configurar tema Material Design 3 (`Color.kt`, `Type.kt`, `Theme.kt`) e strings localizadas em `res/values/strings.xml`.
-- [ ] Implementar `WeatherUiState` (`Loading`, `Success`, `Empty`, `Error`), `WeatherUiEvent` e `WeatherViewModel` com `StateFlow` e UDF.
-- [ ] Implementar `HourlyDetailUiState` e `HourlyDetailViewModel` para visualização de detalhes horários.
-- [ ] Configurar `DomainModule`, `PresentationModule` e inicializar Koin em `FumacaNorteApplication`.
-- [ ] Implementar tela principal `WeatherDashboardScreen` com resumo atual de Manaus, indicador de status offline/última atualização, Pull-to-Refresh e lista horária otimizada.
-- [ ] Implementar tela de detalhes `HourlyDetailScreen` com métricas climáticas completas do horário selecionado.
-- [ ] Implementar navegação tipada com Navigation Compose (`FumacaNorteNavGraph` e `Routes`), `enableEdgeToEdge()`, acessibilidade e `testTag`s.
-- [ ] Escrever testes unitários para `WeatherViewModel` e `HourlyDetailViewModel` com MockK e Turbine cobrindo todos os estados (`Loading`, `Success`, `Empty`, `Error`) e atualização manual.
-- [ ] Validar compilação e aprovação de 100% dos testes unitários do Marco 4.
+- [x] Configurar tema Material Design 3 (`Color.kt`, `Type.kt`, `Theme.kt`) e strings localizadas em `res/values/strings.xml`.
+- [x] Implementar `WeatherUiState` (`Loading`, `Success`, `Empty`, `Error`), `WeatherUiEvent` e `WeatherViewModel` com `StateFlow` e UDF.
+- [x] Implementar `HourlyDetailUiState` e `HourlyDetailViewModel` para visualização de detalhes horários.
+- [x] Configurar `DomainModule`, `PresentationModule` e inicializar Koin em `FumacaNorteApplication`.
+- [x] Implementar tela principal `WeatherDashboardScreen` com resumo atual de Manaus, indicador de status offline/última atualização, Pull-to-Refresh e lista horária otimizada.
+- [x] Implementar tela de detalhes `HourlyDetailScreen` com métricas climáticas completas do horário selecionado.
+- [x] Implementar navegação tipada com Navigation Compose (`FumacaNorteNavGraph` e `Routes`), `enableEdgeToEdge()`, acessibilidade e `testTag`s.
+- [x] Escrever testes unitários para `WeatherViewModel` e `HourlyDetailViewModel` com MockK e Turbine cobrindo todos os estados (`Loading`, `Success`, `Empty`, `Error`) e atualização manual.
+- [x] Validar compilação e aprovação de 100% dos testes unitários do Marco 4.
 
 ---
 
