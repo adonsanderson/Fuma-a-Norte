@@ -9,18 +9,18 @@ Este documento descreve o roadmap sequencial do projeto **Fumaça Norte**, estru
 - [x] Definir Clean Architecture, Regra de Dependência, UDF, estratégia Offline-First e estrutura de pacotes em `docs/ARCHITECTURE.md`.
 - [x] Estruturar o plano de execução completo em 6 Marcos em `docs/TASKS.md`.
 - [x] Criar a versão inicial do `README.md` com documentação completa do projeto.
-- [ ] Revisar e aprovar os documentos SDD antes de iniciar a implementação de código.
+- [x] Revisar e aprovar os documentos SDD antes de iniciar a implementação de código.
 
 ---
 
 ## Marco 2 — Configuração Base, Gradle e Camada Domain (Kotlin Puro)
-- [ ] Configurar `gradle/libs.versions.toml` e `app/build.gradle.kts` com Koin, Room, Retrofit, Moshi, Kotlinx Serialization, Navigation Compose, MockK e Turbine.
-- [ ] Configurar `AndroidManifest.xml` (permissão `INTERNET`, `FumacaNorteApplication`) e metadados do app (`Fumaça Norte`).
-- [ ] Criar os modelos puros de domínio (`CurrentWeather`, `HourlyForecast`, `WeatherSnapshot`, `WeatherCondition`, `DomainError`) sem nenhuma dependência de Android/Room/Retrofit.
-- [ ] Criar a interface `WeatherRepository` na camada `domain.repository`.
-- [ ] Implementar os casos de uso `ObserveManausWeatherUseCase`, `RefreshManausWeatherUseCase` e `ObserveHourlyDetailUseCase`.
-- [ ] Escrever testes unitários da camada `domain` utilizando JUnit 4, MockK, Turbine e `kotlinx-coroutines-test`.
-- [ ] Validar compilação e aprovação de 100% dos testes unitários do Marco 2.
+- [x] Configurar `gradle/libs.versions.toml` e `app/build.gradle.kts` com Koin, Room, Retrofit, Moshi, Kotlinx Serialization, Navigation Compose, MockK e Turbine.
+- [x] Configurar `AndroidManifest.xml` (permissão `INTERNET`, `FumacaNorteApplication`) e metadados do app (`Fumaça Norte`).
+- [x] Criar os modelos puros de domínio (`CurrentWeather`, `HourlyForecast`, `WeatherSnapshot`, `WeatherCondition`, `DomainError`) sem nenhuma dependência de Android/Room/Retrofit.
+- [x] Criar a interface `WeatherRepository` na camada `domain.repository`.
+- [x] Implementar os casos de uso `ObserveManausWeatherUseCase`, `RefreshManausWeatherUseCase` e `ObserveHourlyDetailUseCase`.
+- [x] Escrever testes unitários da camada `domain` utilizando JUnit 4, MockK, Turbine e `kotlinx-coroutines-test`.
+- [x] Validar compilação e aprovação de 100% dos testes unitários do Marco 2.
 
 ---
 
