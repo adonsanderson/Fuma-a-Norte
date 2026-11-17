@@ -25,14 +25,14 @@ Este documento descreve o roadmap sequencial do projeto **Fumaça Norte**, estru
 ---
 
 ## Marco 3 — Camada Data (Retrofit, Room e Política Offline-First)
-- [ ] Implementar `OpenMeteoApiService` e `OpenMeteoResponseDto` para consumo do endpoint `v1/forecast` (Manaus: `latitude=-3.10`, `longitude=-60.02`).
-- [ ] Implementar `WeatherRemoteDataSource` com tratamento explícito de erros de rede, HTTP e timeout.
-- [ ] Implementar entidades Room (`CurrentWeatherEntity`, `HourlyForecastEntity`, `WeatherWithHourlyRelation`), `WeatherDao` (com `@Transaction` e `Flow`) e `FumacaNorteDatabase`.
-- [ ] Implementar funções de mapeamento puro em `WeatherMappers.kt` (`DTO -> Entity`, `Entity -> Domain`).
-- [ ] Implementar `WeatherRepositoryImpl` aplicando o padrão Offline-First (Room como Single Source of Truth).
-- [ ] Configurar os módulos Koin da camada de dados (`NetworkModule`, `DatabaseModule`, `DataModule`).
-- [ ] Escrever testes unitários para os mappers, data sources e `WeatherRepositoryImpl` (cenários: online com sucesso, offline com cache, offline sem cache, preservação de cache em erro de rede) usando MockK e Turbine.
-- [ ] Validar compilação e aprovação de 100% dos testes unitários do Marco 3.
+- [x] Implementar `OpenMeteoApiService` e `OpenMeteoResponseDto` para consumo do endpoint `v1/forecast` (Manaus: `latitude=-3.10`, `longitude=-60.02`).
+- [x] Implementar `WeatherRemoteDataSource` com tratamento explícito de erros de rede, HTTP e timeout.
+- [x] Implementar entidades Room (`CurrentWeatherEntity`, `HourlyForecastEntity`, `WeatherWithHourlyRelation`), `WeatherDao` (com `@Transaction` e `Flow`) e `FumacaNorteDatabase`.
+- [x] Implementar funções de mapeamento puro em `WeatherMappers.kt` (`DTO -> Entity`, `Entity -> Domain`).
+- [x] Implementar `WeatherRepositoryImpl` aplicando o padrão Offline-First (Room como Single Source of Truth).
+- [x] Configurar os módulos Koin da camada de dados (`NetworkModule`, `DatabaseModule`, `DataModule`).
+- [x] Escrever testes unitários para os mappers, data sources e `WeatherRepositoryImpl` (cenários: online com sucesso, offline com cache, offline sem cache, preservação de cache em erro de rede) usando MockK e Turbine.
+- [x] Validar compilação e aprovação de 100% dos testes unitários do Marco 3.
 
 ---
 

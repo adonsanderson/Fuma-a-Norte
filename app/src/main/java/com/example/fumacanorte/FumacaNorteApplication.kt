@@ -1,6 +1,9 @@
 package com.example.fumacanorte
 
 import android.app.Application
+import com.example.fumacanorte.di.dataModule
+import com.example.fumacanorte.di.databaseModule
+import com.example.fumacanorte.di.networkModule
 import org.koin.android.ext.koin.androidContext
 import org.koin.android.ext.koin.androidLogger
 import org.koin.core.context.startKoin
@@ -12,6 +15,11 @@ class FumacaNorteApplication : Application() {
         startKoin {
             androidLogger(Level.ERROR)
             androidContext(this@FumacaNorteApplication)
+            modules(
+                networkModule,
+                databaseModule,
+                dataModule
+            )
         }
     }
 }
